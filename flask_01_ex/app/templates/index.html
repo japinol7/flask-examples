@@ -6,16 +6,17 @@
         <p>This is a very simple Flask Application example.</p>
     </div>
 
-    <div name="choose_a_rating_for_the_picture" style="margin-left: 15px;">
+    <div class="choose-a-rating-for-the-picture" style="margin-left: 15px;">
         <div>
             <br>
             <hr style="height: 2px">
             <p>Here is a Mark Rothko painting:</p>
-            <img src="../static/img/Mark%20Rothko%20fg01.jpg" style="height: 150px;" alt="">
+            <img src="../static/img/Mark%20Rothko%20fg01.jpg" style="height: 150px;"
+                 alt="Mark Rothko painting">
         </div>
         <div>
             <br>
-            <form action="" method="POST" style="background:#b2c8f6">
+            <form class="form-ranking" action="" method="POST" style="background:#b2c8f6">
                 <p><strong>Enter a rating for this picture (1-5).</strong></p>
                 <input name="rating" type="number" min="1" max="5"
                        placeholder="<Rating (ex: 1)>" required>
@@ -25,10 +26,10 @@
                     <option value="add_to_wish_list">Add to wish list</option>
                     <option value="add_to_gift">Add to gift for friend</option>
                 </select>
-                <button style="background:#69c127">Submit</button>
+                <button class="submit-ranking" style="background:#69c127">Submit</button>
             </form>
         </div>
-        <div>
+        <div id="rankings-list" class="rankings-list">
             <ul>
                 <li>5 Stars: *****</li>
                 <li>4 Stars: ****</li>
