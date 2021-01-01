@@ -20,6 +20,11 @@ body {
     background-color: white;
 }
 
+.body {
+    font-size: 16px;
+    text-align: left;
+}
+
 h1 {
     background: #6e91de;
     color: white;

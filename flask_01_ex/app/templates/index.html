@@ -2,19 +2,19 @@
 
 {% block content %}
     <h1>Home</h1>
-    <div style="text-align: left;">
+    <div class="body">
         <p>This is a very simple Flask Application example.</p>
     </div>
 
     <div class="choose-a-rating-for-the-picture">
-        <div>
+        <div class="body">
             <br>
             <hr style="height: 2px">
             <p>Here is a Mark Rothko painting:</p>
             <img src="../static/img/Mark%20Rothko%20fg01.jpg" style="height: 150px;"
                  alt="Mark Rothko painting">
         </div>
-        <div>
+        <div class="body">
             <br>
             <form class="form-ranking" action="" method="POST" style="background:#b2c8f6">
                 <p><strong>Enter a rating (1-5) and an action for this picture.</strong></p>
@@ -29,7 +29,7 @@
                 <button class="submit-ranking">Submit</button>
             </form>
         </div>
-        <div id="rankings-list" class="rankings-list">
+        <div id="rankings-list" class="body rankings-list">
             <ul>
                 <li>5 Stars: *****</li>
                 <li>4 Stars: ****</li>
