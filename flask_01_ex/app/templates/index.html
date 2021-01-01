@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1 style="background: #6e91de">Home</h1>
+    <h1>Home</h1>
     <div style="text-align: left;">
         <p>This is a very simple Flask Application example.</p>
     </div>
 
-    <div class="choose-a-rating-for-the-picture" style="margin-left: 15px;">
+    <div class="choose-a-rating-for-the-picture">
         <div>
             <br>
             <hr style="height: 2px">
@@ -17,16 +17,16 @@
         <div>
             <br>
             <form class="form-ranking" action="" method="POST" style="background:#b2c8f6">
-                <p><strong>Enter a rating for this picture (1-5).</strong></p>
-                <input name="rating" type="number" min="1" max="5"
+                <p><strong>Enter a rating (1-5) and an action for this picture.</strong></p>
+                <input name="picture_rating" type="number" min="1" max="5"
                        placeholder="<Rating (ex: 1)>" required>
-                <select name="heard_of" required>
+                <select name="picture_action" required>
                     <option value="" selected>&lt;Select an action&gt;</option>
                     <option value="add_to_card">Add to card</option>
                     <option value="add_to_wish_list">Add to wish list</option>
                     <option value="add_to_gift">Add to gift for friend</option>
                 </select>
-                <button class="submit-ranking" style="background:#69c127">Submit</button>
+                <button class="submit-ranking">Submit</button>
             </form>
         </div>
         <div id="rankings-list" class="rankings-list">
