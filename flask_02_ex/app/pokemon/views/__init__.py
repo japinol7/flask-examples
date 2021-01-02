@@ -1,1 +1,1 @@
-from . import pokemon_views
+from . import pokemon_view

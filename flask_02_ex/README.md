@@ -9,3 +9,9 @@ This is a very simple Flask Application example that calls some APIs.
 	author_gitHub: japinol7
 	author_twitter: @japinol
 	Python requires: 3.8 or greater.
+##
+    Kudos to the APIs we have used in this little project:
+    API	        Website                            Comment
+    --------------- ---------------------------------- ----------------------------------------------------------------------------------
+    PokéAPI	        https://pokeapi.co/	           Provides a RESTful API interface to highly detailed objects built from thousands of lines of data related to Pokémon
+    Jikan	        https://jikan.moe/	           Jikan (時間) is an open-source PHP & REST API for MyAnimeList.net. It parses the website to satisfy the need for an API.

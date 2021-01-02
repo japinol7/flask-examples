@@ -13,7 +13,7 @@ def pokemon():
 
 
 def get_pokemon_of_colour(colour):
-    r = requests.get('https://pokeapi.co/api/v2/pokemon-color/' + colour.lower())
+    r = requests.get(f"https://pokeapi.co/api/v2/pokemon-color/{colour.lower()}")
     if not r.ok:
         return colour, 0, []
 
