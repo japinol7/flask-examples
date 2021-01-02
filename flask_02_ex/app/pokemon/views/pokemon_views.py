@@ -3,12 +3,6 @@ from flask import render_template, request
 from app import app
 
 
-@app.route('/')
-@app.route('/index')
-def index():
-    return render_template('index.html', title='Flask 02 Example. Calling APIs')
-
-
 @app.route('/pokemon', methods=['GET', 'POST'])
 def pokemon():
     pokemon = []
@@ -16,11 +10,6 @@ def pokemon():
         colour = request.form.get('pokemon_color')
         pokemon = get_pokemon_of_colour(colour)
     return render_template('pokemon.html', pokemon=pokemon)
-
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
 
 
 def get_pokemon_of_colour(colour):
