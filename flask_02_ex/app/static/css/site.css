@@ -25,9 +25,13 @@ body {
     text-align: left;
 }
 
-.bodysmall {
+.body_small {
     font-size: 14px;
     text-align: left;
+}
+
+.body_warning {
+    color: darkred;
 }
 
 h1 {

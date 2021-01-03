@@ -5,7 +5,7 @@
 
     <div class="body">
         <br>
-        <form class="form-ranking" action="/pokemon" method="POST" style="background:#b2c8f6">
+        <form class="form-class" action="/pokemon" method="POST" style="background:#b2c8f6">
             <p><strong>Choose a colour to find pokemon that match</strong></p>
             <select name="pokemon_color" id="pokemon_color" type="text" required>
                 <option value="" selected>&lt;Select a colour&gt;</option>
@@ -43,7 +43,7 @@
                 {% for item in pokemon[2] %}
                     <tr>
                     <td>{{ item[0] }}</td>
-                    <td class="bodysmall"><a href="{{ item[1] }}">{{ item[1] }}</a></td>
+                    <td class="body_small"><a href="{{ item[1] }}">{{ item[1] }}</a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
@@ -51,7 +51,7 @@
                 <tbody>
                 <tr>
                     <td></td>
-                    <td class="bodysmall"></td>
+                    <td class="body_small"></td>
                 </tr>
                 </tbody>
 		    {% endif %}
