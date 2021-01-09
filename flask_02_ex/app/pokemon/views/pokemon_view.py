@@ -7,19 +7,19 @@ from app import app
 def pokemon():
     pokemon = []
     if request.method == 'POST' and 'pokemon_color' in request.form:
-        colour = request.form.get('pokemon_color')
-        pokemon = get_pokemon_of_colour(colour)
+        color = request.form.get('pokemon_color')
+        pokemon = get_pokemon_of_color(color)
     return render_template('pokemon.html', pokemon=pokemon)
 
 
-def get_pokemon_of_colour(colour):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon-color/{colour.lower()}")
+def get_pokemon_of_color(color):
+    r = requests.get(f"https://pokeapi.co/api/v2/pokemon-color/{color.lower()}")
     if not r.ok:
-        return colour, 0, []
+        return color, 0, []
 
     pokemon = []
     pokedata = r.json()
     for item in pokedata['pokemon_species']:
         pokemon.append((item['name'], item['url']))
 
-    return colour, len(pokemon), pokemon
+    return color, len(pokemon), pokemon
