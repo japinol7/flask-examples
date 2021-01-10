@@ -8,4 +8,4 @@ This is a collection of simple Flask Application examples.
 	author_nickname: japinol
 	author_gitHub: japinol7
 	author_twitter: @japinol
-	Python requires: 3.7 or greater.
+	Python requires: 3.7 or greater (3.8 in some examples).
