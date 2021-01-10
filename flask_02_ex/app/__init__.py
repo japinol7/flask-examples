@@ -6,4 +6,5 @@ from . import views
 from . import pokemon
 from . import anime_list
 from . import nasa_asteroid
+from . import nasa_apod
 from . import dog_breeds
