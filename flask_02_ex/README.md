@@ -52,7 +52,7 @@ This is a very simple Flask Application example that calls some APIs.
                                                                         uncanny and incredible web sites and applications using data from the 
                                                                         several years of the Marvel age of comics.
                                                                         An API key is needed to request the API.
-                                                                            Regarding this example you must create a folder in the HOME directory
+                                                                            Regarding this example you must create the folder marvel_api_keys in the HOME directory
                                                                             with a file containing your API public key (marvel_public_key.key)
                                                                             and another file containing your API private key marvel_private_key.key
                                                                             You can copy this directory structure from the extra folder of this project.
